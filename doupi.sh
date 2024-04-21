@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker commit -a 'btian1' -m 'instruction' ChatGLM3 ChatGLM3_images
+docker commit -a 'btian1' -m 'instruction' chatglm3 chatglm3_images

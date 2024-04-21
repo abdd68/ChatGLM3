@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker stop ChatGLM3
-docker rm ChatGLM3
+docker stop chatglm3
+docker rm chatglm3
