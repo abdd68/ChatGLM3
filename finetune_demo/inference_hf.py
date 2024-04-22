@@ -47,8 +47,16 @@ def main(
         model_dir: Annotated[str, typer.Argument(help='')],
         prompt: Annotated[str, typer.Option(help='')],
 ):
+    
     model, tokenizer = load_model_and_tokenizer(model_dir)
     response, _ = model.chat(tokenizer, prompt)
+    # history = []
+    # response, _ = model.chat(tokenizer, prompt)
+    # current_length = 0
+    # for response, history in model.stream_chat(tokenizer, prompt, history=history, top_p=1,
+    #                                                                 temperature=0.01):
+    #         print(response[current_length:], end="", flush=True)
+    #         current_length = len(response)
     print(response)
 
 
